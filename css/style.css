@@ -2,6 +2,17 @@
 
 @font-face {
   font-family: "Fira Sans";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Fira Sans"),
+    url("../fonts/FiraSans-Thin.woff2") format("woff2"),
+    url("../fonts/FiraSans-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fira Sans";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -22,6 +33,28 @@
     url("../fonts/FiraSans-Medium.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Inter"),
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("Inter"),
+    url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+}
+
 /* Variables */
 
 :root {
@@ -30,6 +63,10 @@
   --basic-dark-blue: #080413;
   --basic-green-light: #01B99F;
   --basic-white-opacity: rgba(255,255,255, 0.5);
+  --basic-dark-grey: #333333;
+  --basic-light-grey: #313133;
+  --basic-medium-grey: #C9C8CC;
+  --basic-steal-grey: rgb(96, 96, 97);
 
 }
 
@@ -88,7 +125,7 @@ body {
 }
 
 .slogan__holder {
-  padding: 40px 40px;
+  padding: 40px 40px 74px 40px;
 }
 
 .slogan__title {
@@ -98,7 +135,7 @@ body {
   color: var(--basic-white-opacity);
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 5px 0;
 }
 
 .slogan__text {
@@ -129,7 +166,7 @@ body {
   color: var(--basic-white);
   background-color: var(--basic-green-light);
   border-radius: 20px;
-  width: 340px;
+  width: 342px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -144,7 +181,7 @@ body {
   background-image: url(../img/arrow-icon.svg);
   width: 28px;
   height: 28px;
-  bottom: 64px;
+  bottom: 77px;
 }
 
 
@@ -156,7 +193,7 @@ body {
 }
 
 .page-footer__wrapper {
-  padding: 20px 50px;
+  padding: 6px 50px;
 }
 
 .page-footer__text {
@@ -240,7 +277,7 @@ body {
   line-height: 28px;
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
 }
 
 
@@ -299,6 +336,26 @@ body {
   background-color: var(--basic-black);
 }
 
+.status__button--male,
+.status__button--yes {
+  background-color: var(--basic-black);
+}
+
+.status__button--female,
+.status__button--no {
+  background-color: var(--basic-green-light);
+}
+
+.status__button--next {
+  font-size: 16px;
+  line-height: 24px;
+  width: 343px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--basic-dark-grey);
+}
+
 
 /*page3*/
 
@@ -311,4 +368,337 @@ body {
   color: var(--basic-white);
   text-align: center;
   margin: 50px 0 30px 0;
+}
+
+
+/*page4*/
+/*acquaintance*/
+
+.acquaintance {
+  padding: 200px 40px;
+}
+
+.acquaintance__title {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  color: var(--basic-white);
+  margin: 60px 0 20px 0;
+  text-align: center;
+}
+
+.acquaintance__slogan {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--basic-white);
+  text-align: center;
+  margin: 30px 0;
+}
+
+.acquaintance__button-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acquaintance__button {
+  width: 343px;
+  height: 40px;
+  background-color: var(--basic-green-light);
+  border-radius: 30px;
+  border: none;
+  color: var(--basic-white);
+  font-size: 16px;
+  text-align: center;
+}
+
+/*page5*/
+
+/*gender*/
+
+.gender__text {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.gender__slogan {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+/*page6*/
+
+/*parent*/
+
+.parent__text {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--basic-white);
+  text-align: center;
+  margin: 60px 0 30px 0;
+}
+
+/*page7*/
+
+/*data-birth*/
+
+.date-birth {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 100px; */
+  padding: 50px 40px;
+}
+
+.date-birth--container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 39px; */
+}
+
+.date-birth__text {
+  color: var(--basic-white);
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 0 39px 0;
+}
+
+.date-birth__input-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 100px 0;
+}
+
+.date-birth__input-wrapper {
+  margin: 0 0 20px 0;
+}
+
+.date-birth__input {
+  position: relative;
+  width: 365px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--basic-green-light);
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.date-birth__input::placeholder {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--basic-white);
+}
+
+
+.date-birth__button-calendar {
+  position: relative;
+  top: 0px; 
+  right: 40px;
+  width: 29px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+
+/*page8*/
+
+/*calendar*/
+
+.calendar__container {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--basic-white);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 45px;
+}
+
+.calendar__wrapper {
+  width: 265px;
+  height: 385px;
+  background-color: var(--basic-dark-grey);
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px 40px;
+}
+
+.calendar__section {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar__holder {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar__button-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.calendar__weekdays-holder {
+}
+
+.calendar__weekdays {
+  font-family: "Inter",  Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.calendar__weekdays th {
+  padding: 8px;
+}
+
+.calendar__days .calendar__days-link {
+  color: var(--basic-medium-grey);
+  z-index: 0;
+}
+
+.calendar__day-active .calendar__days-link {
+  position: relative;
+  z-index: 1;
+  color: var(--basic-white);
+}
+
+.calendar__day-active .calendar__days-link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  color: var(--basic-white);
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.calendar__day-active--green .calendar__days-link::before {
+  background-color: var(--basic-green-light);
+  top: -13px;
+  left: -15px;
+}
+
+.calendar__day-active--grey .calendar__days-link::before {
+  background-color: var(--basic-light-grey);
+  top: -12px;
+  left: -17px;
+}
+
+.calendar__day-off .calendar__days-link {
+  color: var(--basic-steal-grey);
+}
+
+.calendar__days-holder {
+  justify-content: space-between;
+  line-height: 24px;
+}
+
+.calendar__days-holder td {
+  padding: 8px 11px;
+  text-align: center;
+}
+
+.calendar__days-link {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.calendar__button-holder {
+}
+
+
+/*select*/
+
+.calendar__section {
+  display: flex;
+  gap: 20px;
+}
+
+.calendar__section select {
+}
+
+.calendar__select-months {
+  font-family: "Inter",  Arial, sans-serif;
+  font-size: 14px;
+  color: var(--basic-white);
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  background-color: var(--basic-light-grey);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.calendar__select-months:active,
+.calendar__select-months:link,
+.calendar__select-years:active,
+.calendar__select-years:link {
+  outline: 2px solid var(--basic-green-light);
+}
+
+.calendar__section option:checked {
+  background-color: var(--basic-green-light);
+}
+
+.calendar__select-years {
+  font-family: "Inter",  Arial, sans-serif;
+  font-size: 14px;
+  color: var(--basic-white);
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: var(--basic-dark-grey);
+}
+
+.calendar__button {
+  font-family: "Inter",  Arial, sans-serif;
+  font-size: 14px;
+  width: 136px;
+  height: 40px;
+  color: var(--basic-white);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.calendar__button--cancel {
+  background-color: var(--basic-light-grey);
+}
+
+.calendar__button--set {
+  background-color: var(--basic-green-light);
 }
