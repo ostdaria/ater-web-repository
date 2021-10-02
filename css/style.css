@@ -67,6 +67,9 @@
   --basic-light-grey: #313133;
   --basic-medium-grey: #C9C8CC;
   --basic-steal-grey: rgb(96, 96, 97);
+  --basic-forga-black: #09080C;
+
+  --basic-green-light-opacity: rgba(1,185,159, 0.5);
 
 }
 
@@ -356,20 +359,163 @@ body {
   background-color: var(--basic-dark-grey);
 }
 
+.status__button--next-green {
+  background-color: var(--basic-green-light);
+}
+
+.status__button--next-grey:hover {
+  background-color: var(--basic-green-light);
+}
+
+.status__button--next-grey:active {
+  background-color: var(--basic-green-light-opacity);
+}
+
 
 /*page3*/
 
+/*question*/
 
-/*goals*/
-
-.goals__text {
+.question__text {
   font-size: 24px;
   line-height: 28px;
   color: var(--basic-white);
   text-align: center;
-  margin: 50px 0 30px 0;
+  margin: 0 0 80px 0;
 }
 
+.question__slogan {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+/*page5*/
+.question__text--gender {
+  margin: 0 0 20px 0;
+}
+
+.question__slogan--gender {
+  margin: 0 0 100px 0;
+}
+
+/*page13*/
+.question__text--time {
+  margin: 0 0 20px 0;
+}
+
+.question__slogan--time {
+  margin: 0 0 100px 0;
+}
+
+
+/*page7*/
+.question__text--birth {
+  margin: 0 0 39px 0;
+}
+
+/*page7*/
+/*question data-birth*/
+
+.question__info-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0 100px 0;
+}
+
+.question__text {
+  color: var(--basic-white);
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.question__input-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question__input {
+  font-family: "Fira Sans", Arial, sans-serif;
+  position: relative;
+  width: 365px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--basic-green-light);
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.question__input::placeholder {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--basic-white);
+}
+
+.question__button-calendar {
+  position: relative;
+  top: 0px; 
+  right: 40px;
+  width: 29px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+
+/*page8*/
+.question__info-holder--date {
+  margin: 0 0 22px 0;
+}
+
+/*page15*/
+.question__text--place {
+  margin: 0 0 22px 0;
+}
+
+.question__slogan--place {
+  margin: 0 0 100px 0;
+}
+
+.question__info-holder--place {
+  margin: 0 0 140px 0;
+}
+
+/*page16*/
+
+.question__button-mappin {
+  position: relative;
+  top: 0px; 
+  right: 40px;
+  width: 29px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.question__button-mappin svg path {
+  fill: var(--basic-green-light);
+}
+
+.question__input-place::placeholder {
+  font-size: 10px;
+}
 
 /*page4*/
 /*acquaintance*/
@@ -416,114 +562,8 @@ body {
   text-align: center;
 }
 
-/*page5*/
-
-/*gender*/
-
-.gender__text {
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--basic-white);
-  text-align: center;
-}
-
-.gender__slogan {
-  font-size: 24px;
-  font-weight: 300;
-  color: var(--basic-white);
-  text-align: center;
-}
-
-/*page6*/
-
-/*parent*/
-
-.parent__text {
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--basic-white);
-  text-align: center;
-  margin: 60px 0 30px 0;
-}
-
-/*page7*/
-
-/*data-birth*/
-
-.date-birth {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  /* gap: 100px; */
-  padding: 50px 40px;
-}
-
-.date-birth--container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  /* gap: 39px; */
-}
-
-.date-birth__text {
-  color: var(--basic-white);
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  margin: 0 0 39px 0;
-}
-
-.date-birth__input-holder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 100px 0;
-}
-
-.date-birth__input-wrapper {
-  margin: 0 0 20px 0;
-}
-
-.date-birth__input {
-  position: relative;
-  width: 365px;
-  height: 40px;
-  background-color: transparent;
-  border-radius: 8px;
-  border: 1px solid var(--basic-green-light);
-  padding: 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 25px;
-}
-
-.date-birth__input::placeholder {
-  font-family: "Fira Sans", Arial, sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  font-style: normal;
-  font-weight: 300;
-  color: var(--basic-white);
-}
-
-
-.date-birth__button-calendar {
-  position: relative;
-  top: 0px; 
-  right: 40px;
-  width: 29px;
-  height: 20px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
 
 /*page8*/
-
 /*calendar*/
 
 .calendar__container {
@@ -566,9 +606,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-}
-
-.calendar__weekdays-holder {
 }
 
 .calendar__weekdays {
@@ -640,14 +677,43 @@ body {
 /*select*/
 
 .calendar__section {
+  position: relative;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
-.calendar__section select {
+.calendar__section::after {
+  content: "";
+  top: 18px;
+  left: 112px;
+  position: absolute;
+  display: block;
+  background-image: url(../img/one-white-arrow.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+
+.calendar__section::before {
+  content: "";
+  top: 17px;
+  right: 57px;
+  position: absolute;
+  display: block;
+  background-image: url(../img/one-white-arrow.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
 }
 
 .calendar__select-months {
+  position: relative;
   font-family: "Inter",  Arial, sans-serif;
   font-size: 14px;
   color: var(--basic-white);
@@ -658,12 +724,12 @@ body {
   border: none;
   outline: none;
   border-radius: 8px;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-.calendar__select-months:active,
-.calendar__select-months:link,
-.calendar__select-years:active,
-.calendar__select-years:link {
+.calendar__select-months:focus,
+.calendar__select-years:focus {
   outline: 2px solid var(--basic-green-light);
 }
 
@@ -682,6 +748,7 @@ body {
   border: none;
   outline: none;
   background-color: var(--basic-dark-grey);
+  appearance: none;
 }
 
 .calendar__button {
@@ -702,4 +769,145 @@ body {
 
 .calendar__button--set {
   background-color: var(--basic-green-light);
+}
+
+
+/*page13*/
+
+.time-birth__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 50px 0;
+  gap: 20px;
+}
+
+.time-birth__holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.time-birth__input {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  width: 175px;
+  height: 73px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-forga-black);
+  border-radius: 8px;
+  border: 1px solid var(--basic-green-light);
+  outline: none;
+}
+
+.time-birth__input::placeholder {
+  color: var(--basic-white);
+}
+
+.time-birth__input:focus,
+.time-birth__input:link {
+  color: var(--basic-white);
+}
+
+.time-birth__input:hover {
+  border: 1px solid var(--basic-green-light-opacity);
+}
+
+.time-birth__button {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  width: 80px;
+  height: 79px;
+  border: none;
+  border-radius: 8px;
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
+
+
+.time-birth__button:hover {
+  background-color: var(--basic-green-light);
+}
+
+.time-birth__button:active {
+  background-color: var(--basic-green-light-opacity);
+}
+
+
+/*page15*/
+/*place-birth*/
+
+.place-birth {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 40px;
+}
+
+.place-birth--container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.place-birth__text {
+  color: var(--basic-white);
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 0 39px 0;
+}
+
+.place-birth__slogan {
+
+}
+
+.place-birth__input-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 100px 0;
+}
+
+.place-birth__input-wrapper {
+  margin: 0 0 20px 0;
+}
+
+.place-birth__input {
+  position: relative;
+  width: 365px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--basic-green-light);
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.place-birth__input::placeholder {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--basic-white);
+}
+
+.place-birth__button-calendar {
+  position: relative;
+  top: 0px; 
+  right: 40px;
+  width: 29px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
