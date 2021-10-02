@@ -447,6 +447,7 @@ body {
   width: 365px;
   height: 40px;
   background-color: transparent;
+  color: var(--basic-white);
   border-radius: 8px;
   border: 1px solid var(--basic-green-light);
   padding: 0 10px;
@@ -778,7 +779,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0 0 50px 0;
+  margin: 0 0 100px 0;
   gap: 20px;
 }
 
@@ -801,6 +802,7 @@ body {
   border: 1px solid var(--basic-green-light);
   outline: none;
 }
+
 
 .time-birth__input::placeholder {
   color: var(--basic-white);
