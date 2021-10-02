@@ -471,6 +471,7 @@ body {
   line-height: 28px;
   text-align: center;
   justify-content: center;
+  display: flex;
   margin: 0 0 39px 0;
 }
 
