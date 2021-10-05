@@ -11,59 +11,61 @@
     <link rel="icon" href="img/favicon/logo.svg" type="image/svg+xml">
   </head>
   <body class="page-body page-body--preview">
-    <header class="page-header page-header--preview">
-      <div class="page-header__container range-controls container">
-        <div class="range-controls__wrapper">
-          <div class="range-controls__scale">
-            <div class="range-controls__bar" style="width: 17%; margin-right: 84%;"></div>
-          </div>
-          <ul class="range-controls__toggle">
-            <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
-            <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
-            <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
-            <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
-          </ul>
-        </div>
-        <div class="profile">
-          <p class="profile__title">Your Profile</p>
-        </div>
-      </div>
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden"></h1>
-
-      <div class="status question container">
-        <div class="question__section">
-          <p class="question__text question__text--time">At what time were you born?</p>
-          <p class="question__slogan question__slogan--time">This highlights the duality of your masculine and feminine<br> energies.</p>
-        </div>
-        <div class="time-birth__container">
-          <div class="time-birth__holder">
-            <div class="time-birth__input-text">
-              <label class="time-birth__label visually-hidden" for="time-hour">Hour of birth</label>
-              <input class="time-birth__input time-birth__input--hour" id="time-hour" type="text" name="hour-birth" placeholder="HH">
+    <div class="page">
+      <header class="page-header page-header--preview">
+        <div class="page-header__container range-controls container">
+          <div class="range-controls__wrapper">
+            <div class="range-controls__scale">
+              <div class="range-controls__bar" style="width: 17%; margin-right: 84%;"></div>
             </div>
-            <div class="time-birth__input-text">
-              <label class="time-birth__label visually-hidden" for="time-minute">Minute of birth</label>
-              <input class="time-birth__input time-birth__input--minute" id="time-minute" type="text" name="minute-birth" placeholder="MM">
+            <ul class="range-controls__toggle">
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+            </ul>
+          </div>
+          <div class="profile">
+            <p class="profile__title">Your Profile</p>
+          </div>
+        </div>
+      </header>
+  
+      <main class="page-main">
+        <h1 class="visually-hidden"></h1>
+  
+        <div class="status question container">
+          <div class="question__section">
+            <p class="question__text question__text--time">At what time were you born?</p>
+            <p class="question__slogan question__slogan--time">This highlights the duality of your masculine and feminine<br> energies.</p>
+          </div>
+          <div class="time-birth__container">
+            <div class="time-birth__holder">
+              <div class="time-birth__input-text">
+                <label class="time-birth__label visually-hidden" for="time-hour">Hour of birth</label>
+                <input class="time-birth__input time-birth__input--hour" id="time-hour" type="text" name="hour-birth" placeholder="HH">
+              </div>
+              <div class="time-birth__input-text">
+                <label class="time-birth__label visually-hidden" for="time-minute">Minute of birth</label>
+                <input class="time-birth__input time-birth__input--minute" id="time-minute" type="text" name="minute-birth" placeholder="MM">
+              </div>
+            </div>
+  
+            <div class="time-birth__holder">
+              <button class="time-birth__button" type="submit">AM</button>
+              <button class="time-birth__button" type="submit">PM</button>
             </div>
           </div>
-
-          <div class="time-birth__holder">
-            <button class="time-birth__button" type="submit">AM</button>
-            <button class="time-birth__button" type="submit">PM</button>
+          <div class="status__button-holder">
+            <button class="status__button status__button--next status__button--next-grey" type="submit">Next</button>
           </div>
         </div>
-        <div class="status__button-holder">
-          <button class="status__button status__button--next status__button--next-grey" type="submit">Next</button>
+      </main>
+  
+      <footer class="page-footer">
+        <div class="page-footer__holder container">
         </div>
-      </div>
-    </main>
-
-    <footer class="page-footer">
-      <div class="page-footer__holder container">
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

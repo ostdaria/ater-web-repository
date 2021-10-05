@@ -11,43 +11,45 @@
     <link rel="icon" href="img/favicon/logo.svg" type="image/svg+xml">
   </head>
   <body class="page-body page-body--preview">
-    <header class="page-header page-header--preview">
-      <div class="page-header__container range-controls container">
-        <div class="range-controls__wrapper">
-          <div class="range-controls__scale">
-            <div class="range-controls__bar" style="width: 10%; margin-right: 93%;"></div>
+    <div class="page">
+      <header class="page-header page-header--preview">
+        <div class="page-header__container range-controls container">
+          <div class="range-controls__wrapper">
+            <div class="range-controls__scale">
+              <div class="range-controls__bar" style="width: 10%; margin-right: 93%;"></div>
+            </div>
+            <ul class="range-controls__toggle">
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+            </ul>
           </div>
-          <ul class="range-controls__toggle">
-            <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
-            <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
-            <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
-            <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
-          </ul>
+          <div class="profile">
+            <p class="profile__title">Your Profile</p>
+          </div>
         </div>
-        <div class="profile">
-          <p class="profile__title">Your Profile</p>
+      </header>
+  
+      <main class="page-main">
+        <h1 class="visually-hidden"></h1>
+        
+        <div class="status question container">
+          <div class="question__section">
+            <p class="question__text question__text--gender">What’s your gender?</p>
+            <p class="question__slogan question__slogan--gender">This highlights the duality of your masculine and feminine<br> energies.</p>
+          </div>
+          <div class="status__button-holder">
+            <button class="status__button status__button--male" type="submit">Male</button>
+            <button class="status__button status__button--female" type="submit">Female</button>
+          </div>
         </div>
-      </div>
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden"></h1>
-      
-      <div class="status question container">
-        <div class="question__section">
-          <p class="question__text question__text--gender">What’s your gender?</p>
-          <p class="question__slogan question__slogan--gender">This highlights the duality of your masculine and feminine<br> energies.</p>
+      </main>
+  
+      <footer class="page-footer">
+        <div class="page-footer__holder container">
         </div>
-        <div class="status__button-holder">
-          <button class="status__button status__button--male" type="submit">Male</button>
-          <button class="status__button status__button--female" type="submit">Female</button>
-        </div>
-      </div>
-    </main>
-
-    <footer class="page-footer">
-      <div class="page-footer__holder container">
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
