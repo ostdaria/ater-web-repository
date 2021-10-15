@@ -1,0 +1,69 @@
+.slogan {
+  padding: 0 20px 0 20px;
+}
+
+.slogan__holder {
+  padding: 25px 0 25px 0;
+}
+
+.slogan__title {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--basic-white-opacity);
+  text-align: center;
+  margin: 31px 0 0 0;
+}
+
+.slogan__text {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--basic-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 32px 0 34px 0;
+}
+
+@media (min-width: 1440px) {
+  .slogan {
+    padding: 40px 40px 74px 40px;
+  }
+
+  .slogan__holder {
+    padding: 0;
+  }
+
+  .slogan__title {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--basic-white-opacity);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .slogan__text {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--basic-white);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 45px 200px 0 200px;
+  }
+
+  .slogan__text br {
+    display: none;
+  }
+}

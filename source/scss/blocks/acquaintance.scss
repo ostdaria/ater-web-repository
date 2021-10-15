@@ -1,0 +1,26 @@
+@media (min-width: 1440px) {
+  .acquaintance {
+    padding: 30px 40px;
+  }
+
+  .acquaintance__title {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    color: var(--basic-white);
+    margin: 20px 0 20px 0;
+    text-align: center;
+  }
+  
+  .acquaintance__slogan {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--basic-white);
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+}

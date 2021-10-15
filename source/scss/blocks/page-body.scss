@@ -1,0 +1,43 @@
+.page-body {
+  font-size: 14px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+}
+
+.page-body__container {
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.page-body--preview {
+  background-image: url(../img/background-mobile.svg);
+  background-position: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 1440px) {
+  .page-body {
+    min-width: 1200px;
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+    z-index: 1;
+  }
+
+  .page-body--preview {
+    background-image: none;
+  }
+
+  .page-body--background {
+    background-image: url(../img/backgroung-desktop.svg);
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: 50% right;
+  }
+}

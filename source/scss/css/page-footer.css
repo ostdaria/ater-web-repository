@@ -1,0 +1,102 @@
+.page-footer {
+  margin-top: auto;
+}
+
+.page-footer__holder {
+  padding: 0 10px 0 10px;
+}
+
+.page-footer__container {
+  padding: 30px 0 30px 0;
+}
+
+.page-footer__text {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  color: var(--basic-white-opacity);
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+.page-footer__link {
+  color: var(--basic-white-opacity);
+}
+
+.page-footer__button-wrapper {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-footer__button-next {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  height: 40px;
+  width: 343px;
+  border-radius: 30px;
+  color: var(--basic-white);
+  background-color: var(--basic-dark-grey);
+  border: none;
+}
+
+@media (min-width: 1440px) {
+  .page-footer__wrapper {
+    padding: 0;
+  }
+  .page-footer__holder {
+    padding: 20px 40px 20px 40px;
+  }
+  .page-footer__container {
+    padding: 0 0 20px 0;
+  }
+  .page-footer__button-wrapper {
+    margin-bottom: 200px;
+  }
+  .page-footer__text {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 30px 0 0 0;
+    color: var(--basic-white-opacity);
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page-footer__button-wrapper {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page-footer__button-next {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    height: 40px;
+    width: 343px;
+    border-radius: 30px;
+    color: var(--basic-white);
+    background-color: var(--basic-green-light);
+    border: none;
+  }
+}
+/*# sourceMappingURL=page-footer.css.map */

@@ -1,0 +1,14 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-dark-blue: #080413;
+  --basic-green-light: #01B99F;
+  --basic-white-opacity: rgba(255,255,255, 0.5);
+  --basic-dark-grey: #333333;
+  --basic-light-grey: #313133;
+  --basic-medium-grey: #C9C8CC;
+  --basic-steal-grey: rgb(96, 96, 97);
+  --basic-forga-black: #09080C;
+  --basic-green-light-opacity: rgba(1,185,159, 0.5);
+}
+/*# sourceMappingURL=variables.css.map */
