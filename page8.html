@@ -6,17 +6,17 @@
     <title>Aster web</title>
     <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/FiraSans-Regular.woff" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="icon" href="source/favicon.ico">
+    <link rel="icon" href="source/img/favicon/logo.svg" type="image/svg+xml">
   </head>
-  <body class="page-body page-body--preview">
+  <body class="page-body page-body--preview page-body--background">
     <div class="page-body__container">
       <header class="page-header page-header--preview">
         <div class="page-header__container range-controls container">
           <div class="range-controls__wrapper">
             <div class="range-controls__scale">
-              <div class="range-controls__bar" style="width: 13%; margin-right: 88%;"></div>
+              <div class="range-controls__bar" style="width: 13%; margin-right: 87%;"></div>
             </div>
             <ul class="range-controls__toggle">
               <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
@@ -39,7 +39,7 @@
             <p class="question__text question__text--birth">What’s your date of birth?</p>
             <div class="question__info-holder question__info-holder--date">
               <label class="visually-hidden" for="data-info">Date of birth</label>
-              <div class="question__input-holder">
+              <div class="question__input-holder question__input-holder--visible">
                 <input class="question__input" id="data-info" type="text" name="data-birth" placeholder="Date of birth">
                 <button class="question__button-calendar" type="button" aria-label="Button for choosing the date of birth">
                   <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +84,7 @@
               <table class="calendar__holder">
                 <caption class="visually-hidden">Calendar</caption>
                 <thead class="calendar__weekdays-holder">
-                  <tr class="calendar__weekdays">
+                  <tr class="calendar__weekdays calendar__weekdays-desktop">
                     <th>Mo</th>
                     <th>Tu</th>
                     <th>We</th>
@@ -92,6 +92,15 @@
                     <th>Fri</th>
                     <th>Sa</th>
                     <th>Su</th>
+                  </tr>
+                  <tr class="calendar__weekdays calendar__weekdays-mobile">
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                    <th>S</th>
+                    <th>S</th>
                   </tr>
                 </thead>
                 <tbody class="calendar__days-holder">

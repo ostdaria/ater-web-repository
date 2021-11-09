@@ -6,14 +6,17 @@
     <title>Aster web</title>
     <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/FiraSans-Regular.woff" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="icon" href="source/favicon.ico">
+    <link rel="icon" href="source/img/favicon/logo.svg" type="image/svg+xml">
   </head>
-  <body class="page-body page-body--preview">
+  <body class="page-body page-body--preview page-body--background">
     <div class="page-body__container">
       <header class="page-header page-header--preview">
-        <div class="page-header__container container">
+        <div class="page-header__container clock container">
+          <div class="clock__holder">
+            <img class="clock__image" src="source/img/clock-desktop.png" alt="">
+          </div>
         </div>
       </header>
   
@@ -21,16 +24,18 @@
         <h1 class="visually-hidden"></h1>
   
         <div class="acquaintance container">
-          <p class="acquaintance__title">No problem! You can still find plenty of great insights<br> without knowing your<br> exact birth time.</p>
-          <p class="acquaintance__slogan">Tip: If you find out later, you can adjust<br> this in your profile settings.</p>
-          <div class="acquaintance__button-holder">
-            <button class="acquaintance__button" type="submit">Next</button>
+          <div class="acquaintance__holder">
+            <p class="acquaintance__title">No problem! You can still find plenty of great<br> insights without knowing your<br> exact birth time.</p>
+            <p class="acquaintance__slogan">Tip: If you find out later, you can adjust<br> this in your profile settings.</p>
           </div>
         </div>
       </main>
   
       <footer class="page-footer">
         <div class="page-footer__holder container">
+          <div class="page-footer__button-wrapper page-footer__button-wrapper--clock page-footer__button-holder">
+            <a class="page-footer__button-next" href="page13.html">Next</a>
+          </div>
         </div>
       </footer>
     </div>

@@ -6,17 +6,17 @@
     <title>Aster web</title>
     <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/FiraSans-Regular.woff" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="icon" href="source/favicon.ico">
+    <link rel="icon" href="source/img/favicon/logo.svg" type="image/svg+xml">
   </head>
-  <body class="page-body page-body--preview">
+  <body class="page-body page-body--preview page-body--background">
     <div class="page-body__container">
       <header class="page-header page-header--preview">
         <div class="page-header__container range-controls container">
           <div class="range-controls__wrapper">
             <div class="range-controls__scale">
-              <div class="range-controls__bar" style="width: 13%; margin-right: 88%;"></div>
+              <div class="range-controls__bar" style="width: 12%; margin-right: 88%;"></div>
             </div>
             <ul class="range-controls__toggle">
               <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
@@ -46,17 +46,30 @@
                   </svg> 
                 </button>
               </div>
+              <div class="question__list">
+                <div class="question__item">
+                  <label class="question__item-label" for="day-birth">Day of birth</label>
+                  <input class="question__item-input" type="text"  id="day-birth" name="day-of-birth" placeholder="Day of birth">
+                </div>
+                <div class="question__item">
+                  <label class="question__item-label" for="month-birth">Month of birth</label>
+                  <input class="question__item-input" type="text" id="month-birth" name="month-of-birth" placeholder="Month of birth">
+                </div>
+                <div class="question__item">
+                  <label class="question__item-label" for="year-birth">Year of birth</label>
+                  <input class="question__item-input" type="text" id="year-birth" name="year-of-birth" placeholder="Year of birth">
+                </div>
+              </div>
             </div>
-          </div>
-          
-          <div class="status__button-holder">
-            <button class="status__button status__button--next status__button--next-grey" type="submit">Next</button>
           </div>
         </div>
       </main>
   
       <footer class="page-footer">
         <div class="page-footer__holder container">
+          <div class="page-footer__button-wrapper page-footer__button-holder">
+            <a class="page-footer__button-next" href="page8.html">Next</a>
+          </div>
         </div>
       </footer>
     </div>
