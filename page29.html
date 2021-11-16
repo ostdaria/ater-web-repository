@@ -12,46 +12,42 @@
   </head>
   <body class="page-body page-body--preview page-body--background">
     <div class="page-body__container">
-      <header class="page-header">
+      <header class="page-header page-header--preview">
         <div class="page-header__container range-controls container">
           <div class="range-controls__wrapper">
             <div class="range-controls__scale">
-              <div class="range-controls__bar" style="width: 3%; margin-right: 97%;"></div>
+              <div class="range-controls__bar" style="width: 35%; margin-right: -1%;"></div>
+              <div class="range-controls__bar-pink" style="width: 11%; margin-right: 54%;"></div>
             </div>
             <ul class="range-controls__toggle">
               <li class="range-controls__round range-controls__round-green" tabindex="0" style="left: 0%;"></li>
-              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round range-controls__round-green range-controls__round-check" tabindex="0" style="left: 0%;"></li>
               <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
               <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
             </ul>
           </div>
           <div class="profile">
-            <p class="profile__title">Your Profile</p>
+            <p class="profile__title profile__title-partner">Your Partner’s Profile</p>
           </div>
         </div>
       </header>
   
       <main class="page-main">
         <h1 class="visually-hidden"></h1>
-  
-        <div class="status container">
-          <div class="status__container">
-            <div class="status__wrapper">
-              <p class="status__text status__text-relationship">So we can get to know you better, tell<br> us about your relationship status.</p>
-            </div>
-            <div class="status__button-holder">
-              <a class="status__button status__button--single" href="#">Single</a>
-              <a class="status__button status__button--relationship" href="#">In a relationship</a>
-            </div>
+        
+        <div class="status question container">
+          <div class="question__section">
+            <p class="question__text question__text--parent">Do you know what time your partner was born?</p>
+          </div>
+          <div class="status__button-holder">
+            <a class="status__button status__button--yes" href="#">Yes</a>
+            <a class="status__button status__button--no" href="page30.html">No</a>
           </div>
         </div>
       </main>
   
       <footer class="page-footer">
         <div class="page-footer__holder container">
-          <div class="page-footer__button-wrapper">
-            <a class="page-footer__button-next" href="page3.html">Next</a>
-          </div>
         </div>
       </footer>
     </div>

@@ -12,10 +12,21 @@
   </head>
   <body class="page-body page-body--preview page-body--background">
     <div class="page-body__container">
-      <header class="page-header page-header--preview">
-        <div class="page-header__container block-hand container">
-          <div class="block-hand__holder">
-            <img class="block-hand__image" src="source/img/image-hand.png" alt="">
+      <header class="page-header">
+        <div class="page-header__container range-controls container">
+          <div class="range-controls__wrapper">
+            <div class="range-controls__scale">
+              <div class="range-controls__bar" style="width: 28%; margin-right: 71%;"></div>
+            </div>
+            <ul class="range-controls__toggle">
+              <li class="range-controls__round range-controls__round-green" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+              <li class="range-controls__round" tabindex="0" style="left: 0%;"></li>
+            </ul>
+          </div>
+          <div class="profile">
+            <p class="profile__title">Your Profile</p>
           </div>
         </div>
       </header>
@@ -23,15 +34,25 @@
       <main class="page-main">
         <h1 class="visually-hidden"></h1>
   
-        <div class="acquaintance container">
-          <div class="acquaintance__holder">
-            <p class="acquaintance__title acquaintance__title-text">Perfect. We’ve built our guidance with<br> beginners in mind. Let us help you improve<br> your knowledge.</p>
+        <div class="status container">
+          <div class="status__container">
+            <div class="status__wrapper">
+              <p class="status__text status__text-data">Aster uses NASA data to produce your<br> astrological blueprint. When it comes<br> to astrology, you are:</p>
+            </div>
+            <div class="status__button-holder">
+              <a class="status__button" href="#">An expert</a>
+              <a class="status__button" href="#">Curious</a>
+              <a class="status__button" href="#">A begginer</a>
+            </div>
           </div>
         </div>
       </main>
   
       <footer class="page-footer">
         <div class="page-footer__holder container">
+          <div class="page-footer__button-wrapper">
+            <a class="page-footer__button-next" href="page22.html">Next</a>
+          </div>
         </div>
       </footer>
     </div>
