@@ -343,7 +343,8 @@ img {
     margin-bottom: 200px;
   }
 
-  .page-footer__button-wrapper--clock {
+
+  .page-footer__button-wrapper--margin {
     margin-bottom: 70px;
   }
 
@@ -939,6 +940,9 @@ img {
 }
 
 .question__text {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   color: var(--basic-white);
   font-size: 16px;
   line-height: 19px;
@@ -1680,6 +1684,7 @@ img {
   padding: 40px 0 40px 0;
 }
 
+
 .acquaintance__title {
   font-family: "Fira Sans", Arial, sans-serif;
   font-size: 16px;
@@ -1755,6 +1760,10 @@ img {
   margin-top: 400px;
 }
 
+.acquaintance__title-first {
+  margin-top: 600px;
+}
+
 @media (min-width: 1440px) {
   .acquaintance {
     padding: 30px 40px;
@@ -1796,6 +1805,10 @@ img {
     margin-top: 400px;
   }
 
+  .acquaintance__title-first {
+    margin-top: 600px;
+  }
+
   .acquaintance__block {
     margin: 65px 0 65px 0;
   }
@@ -1803,8 +1816,8 @@ img {
   .acquaintance__title-before::before {
     content: "";
     position: absolute;
-    bottom: -50px;
-    right: 350px;
+    bottom: -65px;
+    right: 320px;
     background-image: url(../img/image-rocket.svg);
     background-repeat: no-repeat;
     width: 1000px;
