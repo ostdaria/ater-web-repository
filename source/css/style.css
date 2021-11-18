@@ -887,7 +887,7 @@ img {
     right: 20px;
     width: 32px;
     height: 32px;
-    background-image: url(../img/icon-check.svg);
+    background-image: url(../img/icon-round-check.svg);
   }  
 }
 
@@ -1684,7 +1684,6 @@ img {
   padding: 40px 0 40px 0;
 }
 
-
 .acquaintance__title {
   font-family: "Fira Sans", Arial, sans-serif;
   font-size: 16px;
@@ -1696,21 +1695,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.acquaintance__title-before::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-  background-image: url(../img/image-rocket.svg);
-  background-repeat: no-repeat;
-  width: 476px;
-  height: 290px;
-}
-
-.acquaintance__title-before {
-  position: relative;
 }
 
 .acquaintance__block {
@@ -1762,6 +1746,21 @@ img {
 
 .acquaintance__title-first {
   margin-top: 600px;
+}
+
+.acquaintance__title-before {
+  position: relative;
+}
+
+.acquaintance__title-before::before {
+  content: "";
+  position: absolute;
+  bottom: 73px;
+  right: 0;
+  background-image: url(../img/image-rocket.svg);
+  background-repeat: no-repeat;
+  width: 341px;
+  height: 290px;
 }
 
 @media (min-width: 1440px) {
